@@ -2,7 +2,7 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-@app.get("/items/me")
+@app.get("/users/me")
 async def read_user_me():
     return {"user_id": "the current user"}
 
